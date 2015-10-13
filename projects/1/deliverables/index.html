@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>about me</title>
+</head>
+<body>
+	<h1>Arie's About Me</h1>
+<ul>
+<li> list item 1</li>
+<li>seamonkeys</li>
+</ul>
+
+<ol>
+<li>list number 2
+list number 3
+bannana
+</li>
+</ol>
+
+
+<form id="sayHi">
+
+<input id="firstname" type="text" name="firstname">
+
+<input type="submit" value="submit">
+
+</form>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+
+		$("#sayHi").on("submit", function(e) {
+console.log(1)
+
+			e.preventDefault();
+
+			var firstName = $("#firstname").val();
+
+			alert("hello, " + firstName);
+		});
+
+	});
+</script>
+
+</body>
+</html>
